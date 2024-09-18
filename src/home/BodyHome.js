@@ -5,6 +5,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './../assets/home/desktopHome.css';
+import './../assets/home/tabletHome.css';
+import './../assets/home/mobileHome.css';
 import logo from './../assets/images/migs.jpg';
 import clubpainfree from './../assets/images/clubpainfree.png';
 import spt from './../assets/images/spt.png';
@@ -42,7 +44,7 @@ function BodyHome() {
         className={`home-banner-container-fluid ${isHovered ? 'hovered' : 'parent'}`}>
         <Container className='home-banner-container'>
             <Row className='h-100 align-items-center justify-content-center'>
-              <Col>
+              <Col className="col-lg-4 d-lg-dblock d-md-dnone d-sm-none">
                 <div className='text-white banner-text-left'>
                   <div className='text'>
                     I am a web developer specializing in both frontend and backend development.
@@ -50,7 +52,7 @@ function BodyHome() {
                 </div>
               </Col>
 
-              <Col>
+              <Col className="col-lg-4 col-md-6">
                 <div className='banner-photo' 
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -60,9 +62,15 @@ function BodyHome() {
                 </div>
               </Col>
 
-              <Col>
+              <Col className="col-lg-4 col-md-6">
                 <div className='banner-name-container'>
                   <h1 className='text-white banner-name-text'>Migs Luciano</h1>
+                </div>
+
+                <div className='text-white d-md-block d-lg-none d-sm-none'>
+                  <div className='text text-right'>
+                    I am a web developer specializing in both frontend and backend development.
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -217,7 +225,7 @@ function BodyHome() {
               <h1>What my employers say</h1>
             </div>
 
-            <Col md="6" className="offset-md-3 mb-5">
+            <Col className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-5">
               <div className="testimonial-box">
                 <div className="d-flex align-items-center justify-content-between mb-3">
                   <div className="d-flex align-items-center">
@@ -228,7 +236,7 @@ function BodyHome() {
                     <h3 className='text-warning'><FontAwesomeIcon icon={faStar} /></h3>
                   </div>
                   
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center justify-content-end text-end">
                     <small>Professional Solutions Philippines</small>
                   </div>
                 </div>
@@ -239,9 +247,9 @@ function BodyHome() {
               </div>
             </Col>
 
-            <Col md="3"></Col>
+            <Col className='col-md-2 col-lg-3'></Col>
 
-            <Col md="6" className="offset-md-3 mb-5">
+            <Col className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-5">
               <div className="testimonial-box">
                 <div className="d-flex align-items-center justify-content-between mb-3">
                   <div className="d-flex align-items-center">
@@ -252,7 +260,7 @@ function BodyHome() {
                     <h3 className='text-warning'><FontAwesomeIcon icon={faStar} /></h3>
                   </div>
                   
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center justify-content-end text-end">
                     <small>Zeldan NLRC Co.</small>
                   </div>
                 </div>
@@ -263,7 +271,7 @@ function BodyHome() {
               </div>
             </Col>
 
-            <Col md="3"></Col>
+            <Col className='col-md-2 col-lg-3'></Col>
           </Row>
         </Container>
       </Container>

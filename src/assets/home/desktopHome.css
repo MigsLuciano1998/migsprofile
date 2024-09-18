@@ -2,6 +2,10 @@
 /*------------------------------------------
 HEADER
 ------------------------------------------*/
+.header-container {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .nav-bar {
     background-color: #284b63 !important;
 }
@@ -17,6 +21,16 @@ HEADER
     color: #ffffff !important;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline !important;
+}
+
+.header-container.scrolled {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+
+.header-container.scrolled .navbar-brand,
+.header-container.scrolled .navbar-nav a {
+    color: #284b63 !important;
 }
 
 
