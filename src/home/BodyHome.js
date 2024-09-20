@@ -111,7 +111,7 @@ function BodyHome() {
             <Col>
               <div className='w-80'>
                 <h1>My Works</h1>
-                <p>I have had the opportunity to contribute to a variety of projects as a key member of the development team. In these collborative efforts, I worked alongisde skilled professionals to build and refine diverse websites and web applications. Each project was a team endeavor, showcasing our collective expertise and dedication to delivering effective and innovative solutions. My role in these projects highlights my ability to collaborate successfully and contribute meaningfully to achieving project goals.</p>
+                <p>I have had the opportunity to contribute to a variety of projects as a key member of the development team. In these collaborative efforts, I worked alongside skilled professionals to build and refine diverse websites and web applications. Each project was a team endeavor, showcasing our collective expertise and dedication to delivering effective and innovative solutions. My role in these projects highlights my ability to collaborate successfully and contribute meaningfully to achieving project goals.</p>
               </div>
             </Col>
 
