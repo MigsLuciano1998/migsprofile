@@ -182,14 +182,17 @@ BODY
     width: 100% !important;
 }
 
+.section-two .logo-container .row {
+    align-items: center;
+}
+
 .section-two .logo {
     background-color: #ffffff;
     padding: .5rem 1rem;
-    width: 150px; /* Set a fixed width for consistency */
-    height: 80px; /* Set a fixed height for consistency */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
 }
 
 .section-two img {

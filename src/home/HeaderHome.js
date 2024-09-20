@@ -26,7 +26,7 @@ function HeaderHome() {
       className={`header-container ${isScrolled ? 'scrolled' : ''}`}
     >
         <Container className='header-container'>
-            <Navbar.Brand href="#">MP</Navbar.Brand>
+            <Navbar.Brand href="">MP</Navbar.Brand>
             <Nav className="ml-auto">
               <Nav.Link href="#projects">Go to Projects</Nav.Link>
             </Nav>

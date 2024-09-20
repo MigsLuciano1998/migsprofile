@@ -67,7 +67,7 @@ function BodyHome() {
                   <h1 className='text-white banner-name-text'>Migs Luciano</h1>
                 </div>
 
-                <div className='text-white d-md-block d-lg-none d-sm-none'>
+                <div className='text-white d-md-block d-lg-none d-sm-block'>
                   <div className='text text-right'>
                     I am a web developer specializing in both frontend and backend development.
                   </div>
@@ -105,7 +105,7 @@ function BodyHome() {
         </Container>
       </Container>
 
-      <Container fluid data-aos="fade" className='section-two'>
+      <Container fluid data-aos="fade" id='projects' className='section-two'>
         <Container>
           <Row className="py-5 align-items-center">
             <Col>
@@ -119,10 +119,10 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={clubpainfree} alt="Club Pain Free Logo" /></div>
                     </Col>
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>Club Pain Free</h5>
                         <a href="https://clubpainfree.com/"><i>www.clubpainfree.com</i></a>
@@ -135,10 +135,10 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={spt} alt="Superior Therapy Logo" /></div>
                     </Col>
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>Superior Physical Therapy</h5>
                         <a href="https://www.thesuperiortherapy.com/"><i>www.thesuperiortherapy.com/</i></a>
@@ -151,10 +151,10 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={trumove} alt="TruMove KC Logo" /></div>
                     </Col>
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>TruMove KC</h5>
                         <a href="https://trumovekc.com/"><i>www.trumovekc.com</i></a>
@@ -167,10 +167,10 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={elan} alt="Elan Logo" /></div>
                     </Col>
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>Elan</h5>
                         <a href="https://elanclinic.ca/"><i>www.elanclinic.ca</i></a>
@@ -183,11 +183,11 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={kineci} alt="Kineci" /></div>
                     </Col>
 
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>Kineci</h5>
                         <a href="https://kineci.com/"><i>www.kineci.com</i></a>
@@ -200,10 +200,10 @@ function BodyHome() {
               <div className='ms-5 mb-3'>
                 <div className='logo-container'>
                   <Row>
-                    <Col>
+                    <Col md="4" sm="6">
                       <div className='logo'><img src={znlrtc} alt="Zeldan Nordic Language Review & Training Center Logo" /></div>
                     </Col>
-                    <Col>
+                    <Col md="8" sm="6">
                       <div className='logo-name'>
                         <h5>ZNLRTC</h5>
                         <a href="https://nlrc.ph/"><i>www.nlrc.ph</i></a>
@@ -242,12 +242,12 @@ function BodyHome() {
                 </div>
                 <hr />
                 <div>
-                  <p>Working with migs was a fantastic experience. His commitment to delivering high-quality and reliable solutions truly stands out. Whether tackling complex challenges of meetings tight deadlines, he consistently demonstrated exceptional skill and professionalism. Highly recommended!</p>
+                  <p>Working with Migs was a fantastic experience. His commitment to delivering high-quality and reliable solutions truly stands out. Whether tackling complex challenges of meetings tight deadlines, he consistently demonstrated exceptional skill and professionalism. Highly recommended!</p>
                 </div>
               </div>
             </Col>
 
-            <Col className='col-md-2 col-lg-3'></Col>
+            <Col className='col-md-2 col-lg-3 d-sm-none'></Col>
 
             <Col className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-5">
               <div className="testimonial-box">
@@ -271,7 +271,7 @@ function BodyHome() {
               </div>
             </Col>
 
-            <Col className='col-md-2 col-lg-3'></Col>
+            <Col className='col-md-2 col-lg-3 d-sm-none'></Col>
           </Row>
         </Container>
       </Container>
