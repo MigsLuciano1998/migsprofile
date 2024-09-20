@@ -247,7 +247,7 @@ function BodyHome() {
               </div>
             </Col>
 
-            <Col className='col-md-2 col-lg-3 d-sm-none'></Col>
+            <Col className='col-md-2 col-lg-3 d-sm-none d-xl-block d-md-block'></Col>
 
             <Col className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-5">
               <div className="testimonial-box">
@@ -271,7 +271,7 @@ function BodyHome() {
               </div>
             </Col>
 
-            <Col className='col-md-2 col-lg-3 d-sm-none'></Col>
+            <Col className='col-md-2 col-lg-3 d-sm-none d-xl-block d-md-block'></Col>
           </Row>
         </Container>
       </Container>
