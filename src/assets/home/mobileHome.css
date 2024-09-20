@@ -13,6 +13,15 @@
 
     .banner-name-text {
         text-align: center;
+        margin: 2rem auto 1rem !important;
+    }
+
+    .home-banner-end-container-fluid {
+        padding: 3rem !important;
+    }
+
+    .home-banner-end-container-fluid h1 {
+        font-size: 20px !important;
     }
 
     .d-sm-block .text {
