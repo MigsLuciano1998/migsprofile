@@ -44,7 +44,7 @@ function BodyHome() {
         className={`home-banner-container-fluid ${isHovered ? 'hovered' : 'parent'}`}>
         <Container className='home-banner-container'>
             <Row className='h-100 align-items-center justify-content-center'>
-              <Col className="col-lg-4 d-lg-dblock d-md-dnone d-sm-none">
+              <Col className="col-lg-4 d-xl-block d-lg-dblock d-md-dnone d-sm-none">
                 <div className='text-white banner-text-left'>
                   <div className='text'>
                     I am a web developer specializing in both frontend and backend development.
