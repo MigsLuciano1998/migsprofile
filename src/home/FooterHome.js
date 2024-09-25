@@ -8,10 +8,10 @@ function FooterHome() {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_e80powl',   // Replace with your Service ID
-      'template_cv9sq17',  // Replace with your Template ID
+      'service_e80powl',   // Service ID
+      'template_cv9sq17',  // Template ID
       e.target,
-      'DH0EGrVQCrvXqkoI7'       // Replace with your User ID
+      'DH0EGrVQCrvXqkoI7'  // User ID
     )
     .then((result) => {
       console.log('Email sent successfully:', result.text);
