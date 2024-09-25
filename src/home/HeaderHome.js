@@ -28,7 +28,7 @@ function HeaderHome() {
         <Container className='header-container'>
             <Navbar.Brand href="">MP</Navbar.Brand>
             <Nav className="ml-auto">
-              <Nav.Link href="#projects">Go to Projects</Nav.Link>
+              <Nav.Link href="#contact-form">Send message</Nav.Link>
             </Nav>
         </Container>
     </Navbar>
