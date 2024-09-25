@@ -27,7 +27,7 @@ function FooterHome() {
       <Container fluid className="footer">
         <Container>
           <Row className="align-items-center">
-            <Col sm="12" className="border-right mb-0 pb-0">
+            <Col md="5" sm="12" className="border-right mb-0 pb-0">
               <h1>Send me a message now!</h1>
 
               <div className="d-flex align-items-center">
@@ -42,7 +42,7 @@ function FooterHome() {
               </div>
             </Col>
             
-            <Col sm="12" className="ms-5">
+            <Col md="6" sm="12" className='offset-md-1'>
               <form onSubmit={sendEmail}>
                 <label className='form-label'>Name</label>
                 <input className='form-control' type="text" placeholder='Please enter your name here' name="user_name" required />
