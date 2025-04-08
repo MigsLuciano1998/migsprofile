@@ -229,6 +229,27 @@ BODY
     font-weight: 600;
 }
 
+.overlay-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: #3c6e79;
+    padding: 0.5rem 2rem;
+    color: #fff;
+}
+
+.tools-image-container {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.tools-image {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /*------------------------------------------
 FOOTER

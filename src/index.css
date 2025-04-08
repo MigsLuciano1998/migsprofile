@@ -2,6 +2,10 @@ body{
     font-family: 'Century Gothic' !important;
 }
 
+.row {
+    margin-left: 0 !important;
+}
+
 h1 {
     font-family: "Century Gothic" !important;
     font-weight: 900 !important;

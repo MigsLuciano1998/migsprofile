@@ -15,6 +15,22 @@ import elan from './../assets/images/elan.png';
 import kineci from './../assets/images/kineci.png';
 import znlrtc from './../assets/images/znlrtc.png';
 
+import Illustrator from './../assets/images/illustrator.png';
+import Photoshop from './../assets/images/photoshop.png';
+import Xd from './../assets/images/xd.png';
+import Html from './../assets/images/html-5.png';
+import Css from './../assets/images/css-3.png';
+import Javascript from './../assets/images/js.png';
+import ReactLogo from './../assets/images/react.png';
+import Jquery from './../assets/images/jquery.png';
+import Php from './../assets/images/php.png';
+import Ci from './../assets/images/codeigniter.png';
+import Worpress from './../assets/images/wordpress.png';
+import Mysql from './../assets/images/mysql.png';
+import Seo from './../assets/images/seo.png';
+import Git from './../assets/images/git.png';
+import Github from './../assets/images/github.png';
+
 function BodyHome() {
   useEffect(() => {
     AOS.init({
@@ -35,6 +51,8 @@ function BodyHome() {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  
   
   return (
     <div>
@@ -89,16 +107,88 @@ function BodyHome() {
         <Container>
           <Row>
             <Col>
-              <div>
+              <div className="mb-5">
                 <h1>Design</h1>
                 <p>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to creating fluent user experiences while staying fashionable.</p>
+              </div>
+
+              <div className="bg-light rounded position-relative d-block">
+                <span className="overlay-title"><b>Tools</b></span>
+                <Row className="pt-5 pb-3 d-flex justify-content-center w-100">
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Illustrator} alt="Adobe Illustrator"></img>
+                    <small><b>Adobe<br />Illustrator</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Photoshop} alt="Adobe Photoshop"></img>
+                    <small><b>Adobe<br />Photoshop</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Xd} alt="Adobe XD"></img>
+                    <small><b>Adobe<br />XD</b></small>
+                  </Col>
+                </Row>
               </div>
             </Col>
 
             <Col>
-              <div>
+              <div className="mb-5">
                 <h1>Development</h1>
                 <p>When developing websites and web applications, I use the best tools available and am equally adept at working independently to deliver high-quality solutions tailored to your personal or professional needs.</p>
+              </div>
+
+              <div className="bg-light rounded position-relative d-block">
+                <span className="overlay-title"><b>Tools</b></span>
+                <Row className="pt-5 pb-3 d-flex justify-content-center w-100">
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Html} alt="HTML"></img>
+                    <small><b>HTML</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Css} alt="CSS"></img>
+                    <small><b>CSS</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Javascript} alt="Java Script"></img>
+                    <small><b>Java Script</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={ReactLogo} alt="React"></img>
+                    <small><b>React</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Jquery} alt="jQuery"></img>
+                    <small><b>jQuery</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Php} alt="PHP"></img>
+                    <small><b>PHP</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Ci} alt="CodeIgniter"></img>
+                    <small><b>HTML</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Worpress} alt="Wordpress"></img>
+                    <small><b>Wordpress</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Mysql} alt="MySQL"></img>
+                    <small><b>MySQL</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Seo} alt="Search Engine Optimization"></img>
+                    <small><b>SEO</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Git} alt="Git"></img>
+                    <small><b>Git</b></small>
+                  </Col>
+                  <Col className="tools-image-container">
+                    <img className="tools-image" src={Github} alt="GitHub"></img>
+                    <small><b>GitHub</b></small>
+                  </Col>
+                </Row>
               </div>
             </Col>
           </Row>
