@@ -1,20 +1,34 @@
 {
   "files": {
-    "main.css": "/migsprofile/static/css/main.4ff8bb1d.css",
-    "main.js": "/migsprofile/static/js/main.90eb8200.js",
+    "main.css": "/migsprofile/static/css/main.2afcad42.css",
+    "main.js": "/migsprofile/static/js/main.8a4b7135.js",
     "static/media/elan.png": "/migsprofile/static/media/elan.abf69cd35e6342cccbea.png",
     "static/media/znlrtc.png": "/migsprofile/static/media/znlrtc.898891fb28de504eb474.png",
     "static/media/migs.jpg": "/migsprofile/static/media/migs.7960ffcc0d86660ac4d5.jpg",
+    "static/media/react.png": "/migsprofile/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/mysql.png": "/migsprofile/static/media/mysql.bdbd1eb709e4c13258d2.png",
+    "static/media/php.png": "/migsprofile/static/media/php.4990580e9b615aeebb1f.png",
     "static/media/clubpainfree.png": "/migsprofile/static/media/clubpainfree.f3708b784390c76cb5eb.png",
+    "static/media/codeigniter.png": "/migsprofile/static/media/codeigniter.ecfb83c99b5f5b876f8c.png",
+    "static/media/git.png": "/migsprofile/static/media/git.bad2b1118eff814bb319.png",
+    "static/media/seo.png": "/migsprofile/static/media/seo.8a4272e864e64904ac49.png",
     "static/media/spt.png": "/migsprofile/static/media/spt.8e773522a5a026cebd7b.png",
     "static/media/trumove.png": "/migsprofile/static/media/trumove.6294839935d64941afec.png",
+    "static/media/xd.png": "/migsprofile/static/media/xd.3f14c4795df65a89560c.png",
+    "static/media/github.png": "/migsprofile/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/wordpress.png": "/migsprofile/static/media/wordpress.11ed091523e3152b651f.png",
+    "static/media/jquery.png": "/migsprofile/static/media/jquery.58d16c2a5ec58d719d09.png",
     "static/media/kineci.png": "/migsprofile/static/media/kineci.b5ab1d22e58c79badf43.png",
+    "static/media/photoshop.png": "/migsprofile/static/media/photoshop.339f174c692e921a204a.png",
+    "static/media/css-3.png": "/migsprofile/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/illustrator.png": "/migsprofile/static/media/illustrator.c8306d9279929e8b8cfe.png",
+    "static/media/js.png": "/migsprofile/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/migsprofile/index.html",
-    "main.4ff8bb1d.css.map": "/migsprofile/static/css/main.4ff8bb1d.css.map",
-    "main.90eb8200.js.map": "/migsprofile/static/js/main.90eb8200.js.map"
+    "main.2afcad42.css.map": "/migsprofile/static/css/main.2afcad42.css.map",
+    "main.8a4b7135.js.map": "/migsprofile/static/js/main.8a4b7135.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ff8bb1d.css",
-    "static/js/main.90eb8200.js"
+    "static/css/main.2afcad42.css",
+    "static/js/main.8a4b7135.js"
   ]
 }
