@@ -4,7 +4,7 @@
     }
 
     .banner-photo {
-        margin: 10rem auto 0;
+        margin: 5rem auto 0;
     }
 
     .banner-name-container {
@@ -36,16 +36,16 @@
         margin-bottom: 5rem;
     }
 
-    .section-one .container {
-        margin: 5rem auto;
-    }
-
     .section-one .col:first-child {
         margin-bottom: 3rem;
     }
 
     .section-one .col div {
         width: 100%;
+    }
+
+    .section-one .container {
+        padding: 5rem 0;
     }
 
     .section-two .logo-name {
@@ -68,5 +68,9 @@
         border-right: 0;
         border-bottom: 1px solid white;
         margin-bottom: 3rem !important;
+    }
+
+    .footer button {
+        width: 100%;
     }
 }

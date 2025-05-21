@@ -8,6 +8,7 @@ import './../assets/home/desktopHome.css';
 import './../assets/home/tabletHome.css';
 import './../assets/home/mobileHome.css';
 import logo from './../assets/images/migs.jpg';
+import bannerPhoto from './../assets/images/banner-photo.png';
 import clubpainfree from './../assets/images/clubpainfree.png';
 import spt from './../assets/images/spt.png';
 import trumove from './../assets/images/trumove.png';
@@ -52,7 +53,54 @@ function BodyHome() {
     setIsHovered(false);
   };
 
-  
+  const websiteDescriptions = [
+    [
+      "Clup Pain Free",
+      "www.clubpainfree.com",
+      clubpainfree,
+      "This website is built using wordpress and is designed to help clients relieve pain in their bodies. It offers videos and books that teach you how to treat pain naturally. To make it easier, users can select the specific body part they want to focus on. Once selected, you’ll get access to all the relevant resources—whether videos or books—to help relieve your pain. Books can be downloaded and videos can be watched after subscribing to the website."
+    ],
+    [
+      "Superior Physical Therapy",
+      "www.thesuperiortherapy.com",
+      spt,
+      "This website was built using WordPress for the frontend and CodeIgniter 3 for the backend system. I contributed to both sides of the development. The platform allows clinic staff and clients to interact seamlessly, with features such as online communication and record management. Client records are securely stored on the site, making it easier for the clinic to maintain and access important information. The system includes several tools that enhance the online experience for both staff and clients.",
+    ],
+    [
+      "TruMove KC",
+      "www.trumovekc.com",
+      trumove,
+      "This website was built using WordPress for the frontend and CodeIgniter 3 for the backend system. I contributed to both sides of the development. The platform allows clinic staff and clients to interact seamlessly, with features such as online communication and record management. Client records are securely stored on the site, making it easier for the clinic to maintain and access important information. The system includes several tools that enhance the online experience for both staff and clients.",
+    ],
+    [
+      "Elan",
+      "wwww.elanclinic.ca",
+      elan,
+      "This website was built using WordPress for the frontend and CodeIgniter 3 for the backend system. I contributed to both sides of the development. The platform allows clinic staff and clients to interact seamlessly, with features such as online communication and record management. Client records are securely stored on the site, making it easier for the clinic to maintain and access important information. The system includes several tools that enhance the online experience for both staff and clients.",
+    ],
+    [
+      "Kineci",
+      "www.kineci.com",
+      kineci,
+      "This website was built using WordPress for the frontend and CodeIgniter 3 for the backend system. I contributed to both sides of the development. The platform allows clinic staff and clients to interact seamlessly, with features such as online communication and record management. Client records are securely stored on the site, making it easier for the clinic to maintain and access important information. The system includes several tools that enhance the online experience for both staff and clients.",
+    ],
+    [
+      "ZNLRTC",
+      "www.nlrc.ph",
+      znlrtc,
+      "This website was initially developed by another freelancer using an unspecified framework. However, I was able to understand and follow the program flow, eventually taking over and working on approximately 95% of the website’s features and functionality. The platform enables recruitment agencies, training center staff, and students to submit and manage all necessary requirements. It also helps staff efficiently monitor and assess each student’s progress through the training program. Overall, the system was designed to streamline and automate the manual processes involved in managing the training flow.",
+    ],
+  ];
+
+  const [expanded, setExpanded] = useState([]);
+
+  const toggleExpand = (index) => {
+    setExpanded((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  };
   
   return (
     <div>
@@ -65,7 +113,12 @@ function BodyHome() {
               <Col className="col-lg-4 d-xl-block d-lg-dblock d-md-dnone d-sm-none">
                 <div className='text-white banner-text-left'>
                   <div className='text'>
-                    I am a web developer specializing in both frontend and backend development.
+                    <ul className='mb-0'>
+                      <li>Full-stack Web Developer</li>
+                      <li>DevOps Engineer</li>
+                      <li>System Administrator</li>
+                      <li>SEO Specialist</li>
+                    </ul>
                   </div>
                 </div>
               </Col>
@@ -75,8 +128,7 @@ function BodyHome() {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className='rotating-border'></div>
-                  <img className='static-image' src={logo} alt='Logo'/>
+                  <img className='static-image' src={bannerPhoto} alt='Logo'/>
                 </div>
               </Col>
 
@@ -87,7 +139,7 @@ function BodyHome() {
 
                 <div className='text-white d-md-block d-lg-none d-sm-block'>
                   <div className='text text-right'>
-                    I am a web developer specializing in both frontend and backend development.
+                    Full-stack Web Developer | DevOps Engineer | System Administrator | SEO Specialist
                   </div>
                 </div>
               </Col>
@@ -98,7 +150,7 @@ function BodyHome() {
       <Container fluid data-aos="fade" className='home-banner-end-container-fluid'>
         <Container>
           <div>
-            <h1>Turn pixels into perfection and code into magic.<br />Let's bring your digital dreams to life!</h1>
+            <h1 className='text-neon'>Turn pixels into perfection and code into magic.<br />Let's bring your digital dreams to life!</h1>
           </div>
         </Container>
       </Container>
@@ -108,13 +160,13 @@ function BodyHome() {
           <Row>
             <Col>
               <div className="mb-5">
-                <h1>Design</h1>
-                <p>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to creating fluent user experiences while staying fashionable.</p>
+                <h1 className='text-neon'>Design</h1>
+                <p className='text-white'>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to creating fluent user experiences while staying fashionable.</p>
               </div>
 
-              <div className="bg-light rounded position-relative d-block">
+              <div className="position-relative d-block">
                 <span className="overlay-title"><b>Tools</b></span>
-                <Row className="pt-5 pb-3 d-flex justify-content-center w-100">
+                <Row className="tools-container pt-5 pb-3 d-flex justify-content-center w-100">
                   <Col className="tools-image-container">
                     <img className="tools-image" src={Illustrator} alt="Adobe Illustrator"></img>
                     <small><b>Adobe<br />Illustrator</b></small>
@@ -133,13 +185,13 @@ function BodyHome() {
 
             <Col>
               <div className="mb-5">
-                <h1>Development</h1>
-                <p>When developing websites and web applications, I use the best tools available and am equally adept at working independently to deliver high-quality solutions tailored to your personal or professional needs.</p>
+                <h1 className='text-neon'>Development</h1>
+                <p className='text-white'>When developing websites and web applications, I use the best tools available and am equally adept at working independently to deliver high-quality solutions tailored to your personal or professional needs.</p>
               </div>
 
-              <div className="bg-light rounded position-relative d-block">
+              <div className="position-relative d-block">
                 <span className="overlay-title"><b>Tools</b></span>
-                <Row className="pt-5 pb-3 d-flex justify-content-center w-100">
+                <Row className="tools-container pt-5 pb-3 d-flex justify-content-center w-100">
                   <Col className="tools-image-container">
                     <img className="tools-image" src={Html} alt="HTML"></img>
                     <small><b>HTML</b></small>
@@ -195,115 +247,47 @@ function BodyHome() {
         </Container>
       </Container>
 
-      <Container fluid data-aos="fade" id='projects' className='section-two'>
+      <Container fluid data-aos="fade" id='projects' className='section-two-beta'>
         <Container>
           <Row className="py-5 align-items-center">
-            <Col>
+
               <div className='w-80'>
-                <h1>My Works</h1>
-                <p>I have had the opportunity to contribute to a variety of projects as a key member of the development team. In these collaborative efforts, I worked alongside skilled professionals to build and refine diverse websites and web applications. Each project was a team endeavor, showcasing our collective expertise and dedication to delivering effective and innovative solutions. My role in these projects highlights my ability to collaborate successfully and contribute meaningfully to achieving project goals.</p>
-              </div>
-            </Col>
-
-            <Col>
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={clubpainfree} alt="Club Pain Free Logo" /></div>
-                    </Col>
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>Club Pain Free</h5>
-                        <a href="https://clubpainfree.com/"><i>www.clubpainfree.com</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
+                <h1 className='text-neon'>My Works</h1>
+                <p className='text-white'>I have had the opportunity to contribute to a variety of projects as a key member of the development team. In these collaborative efforts, I worked alongside skilled professionals to build and refine diverse websites and web applications. Each project was a team endeavor, showcasing our collective expertise and dedication to delivering effective and innovative solutions. My role in these projects highlights my ability to collaborate successfully and contribute meaningfully to achieving project goals.</p>
               </div>
 
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={spt} alt="Superior Therapy Logo" /></div>
-                    </Col>
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>Superior Physical Therapy</h5>
-                        <a href="https://www.thesuperiortherapy.com/"><i>www.thesuperiortherapy.com/</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
-
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={trumove} alt="TruMove KC Logo" /></div>
-                    </Col>
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>TruMove KC</h5>
-                        <a href="https://trumovekc.com/"><i>www.trumovekc.com</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
-
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={elan} alt="Elan Logo" /></div>
-                    </Col>
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>Elan</h5>
-                        <a href="https://elanclinic.ca/"><i>www.elanclinic.ca</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
-
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={kineci} alt="Kineci" /></div>
-                    </Col>
-
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>Kineci</h5>
-                        <a href="https://kineci.com/"><i>www.kineci.com</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
-
-              <div className='ms-5 mb-3'>
-                <div className='logo-container'>
-                  <Row>
-                    <Col md="4" sm="6">
-                      <div className='logo'><img src={znlrtc} alt="Zeldan Nordic Language Review & Training Center Logo" /></div>
-                    </Col>
-                    <Col md="8" sm="6">
-                      <div className='logo-name'>
-                        <h5>ZNLRTC</h5>
-                        <a href="https://nlrc.ph/"><i>www.nlrc.ph</i></a>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </div>
-
-            </Col>
+              {websiteDescriptions.map(([title, link, logo, description], index) => (
+                <Col md="4" key={index}>
+                  <div className="website-container">
+                    <div className="logo">
+                      <img src={logo} alt={`${title} Logo`} />
+                    </div>
+                    <div className="logo-name">
+                      <h5>{title}</h5>
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                        <i>{link.replace("https://", "")}</i>
+                      </a>
+                    </div>
+                    <div className="pt-3">
+                      <p
+                        className={`clamp-text website-description ${
+                          expanded.includes(index) ? "expanded" : ""
+                        }`}
+                      >
+                        {description}
+                      </p>
+                      <button
+                        className="btn btn-neon show-more-btn"
+                        onClick={() => toggleExpand(index)}
+                      >
+                        <small>
+                          <i className='text-neon'>{expanded.includes(index) ? "- Show Less" : "+ Show More"}</i>
+                        </small>
+                      </button>
+                    </div>
+                  </div>
+                </Col>
+              ))}
           </Row>
         </Container>
       </Container>
@@ -312,7 +296,7 @@ function BodyHome() {
         <Container>
           <Row className='justify-content-md-center'>
             <div className='text-center pt-5 mb-5'> 
-              <h1>What my employers say</h1>
+              <h1 className='text-neon'>What my employers say</h1>
             </div>
 
             <Col className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-5">

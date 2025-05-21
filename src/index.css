@@ -11,3 +11,11 @@ h1 {
     font-weight: 900 !important;
     font-size: 40px !important;
 }
+
+.text-neon {
+    color: #00FF7B;
+}
+
+.btn-neon {
+    background-color: #00FF7B;
+}

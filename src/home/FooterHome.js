@@ -53,7 +53,7 @@ function FooterHome() {
                 <label className='form-label'>Message</label>
                 <textarea className='form-control' name="message" placeholder='Please enter your message here' rows="10" required />
                 
-                <button className='btn btn-success mt-3' type="submit">Send</button>
+                <button className='btn btn-neon mt-3' type="submit">Send</button>
               </form>
             </Col>
             
