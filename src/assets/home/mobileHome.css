@@ -48,6 +48,10 @@
         padding: 5rem 0;
     }
 
+    .section-one .col-md-6 {
+        margin-bottom: 3rem;
+    }
+
     .section-two .logo-name {
         text-align: center;
     }
