@@ -161,7 +161,7 @@ function BodyHome() {
             <Col md="6">
               <div className="mb-5">
                 <h1 className='text-neon'>Design</h1>
-                <p className='text-white'>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to creating fluent user experiences while staying fashionable.</p>
+                <p className='text-white'>I'm not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to creating fluent user experiences while staying fashionable.</p>
               </div>
 
               <div className="position-relative d-block">
@@ -186,7 +186,7 @@ function BodyHome() {
             <Col md="6">
               <div className="mb-5">
                 <h1 className='text-neon'>Development</h1>
-                <p className='text-white'>When developing websites and web applications, I use the best tools available and am equally adept at working independently to deliver high-quality solutions tailored to your personal or professional needs.</p>
+                <p className='text-white'>I use the best tools available in developing websites and web applications, and I am equally adept at working independently to deliver high-quality solutions tailored to your personal or professional needs.</p>
               </div>
 
               <div className="position-relative d-block">
