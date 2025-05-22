@@ -28,7 +28,7 @@ function FooterHome() {
         <Container>
           <Row className="align-items-center">
             <Col md="5" sm="12" className="border-right pt-4">
-              <h1>Send me a message now!</h1>
+              <h1>Contact Information</h1>
 
               <div className="d-flex align-items-center">
                 <div className="contact-info me-5">

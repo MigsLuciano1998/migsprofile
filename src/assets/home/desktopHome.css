@@ -169,9 +169,10 @@ BODY
 .section-two-beta .logo img{
     width: 100%;
     border-bottom: 1px solid #00FF7B;
-    padding-bottom: 1rem;
+    padding: 1.5rem;
     margin-bottom: 1rem;
     background-color: #ffffff;
+    border-radius: 15px;
 }
 
 .section-two-beta h5 {
