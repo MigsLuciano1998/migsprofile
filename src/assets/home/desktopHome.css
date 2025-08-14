@@ -309,3 +309,27 @@ FOOTER
 .footer .btn-neon:hover {
     border: 1px solid #00FF7B;
 }
+
+.footer-contact-con {
+    border-radius: 1rem;
+    background: #212121;
+    padding: 1rem;
+}
+
+.footer .other-profile-link-logo {
+    width: 12.5%;
+}
+
+.verified-badge {
+  background-color: #1DA1F2; /* Twitter Blue */
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;   /* Bigger circle */
+  height: 1.2em;
+  border-radius: 50%;
+  font-size: 0.75em; /* Smaller check */
+  font-weight: bold;
+  line-height: 1;
+}
