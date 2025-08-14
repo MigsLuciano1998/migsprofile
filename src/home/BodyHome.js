@@ -271,7 +271,7 @@ function BodyHome() {
                     </div>
                     <div className="logo-name">
                       <h5>{title}</h5>
-                      <a href={link} target="_blank" rel="noopener noreferrer">
+                      <a href={`https://${link}`} target="_blank" rel="noopener noreferrer">
                         <i>{link.replace("https://", "")}</i>
                       </a>
                     </div>
