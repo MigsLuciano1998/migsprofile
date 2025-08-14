@@ -15,6 +15,7 @@ import trumove from './../assets/images/trumove.png';
 import elan from './../assets/images/elan.png';
 import kineci from './../assets/images/kineci.png';
 import znlrtc from './../assets/images/znlrtc.png';
+import ynw from './../assets/images/ynw.png';
 
 import Illustrator from './../assets/images/illustrator.png';
 import Photoshop from './../assets/images/photoshop.png';
@@ -55,6 +56,18 @@ function BodyHome() {
 
   const websiteDescriptions = [
     [
+      "You Need Work Now",
+      "www.youneedworknow.com",
+      ynw,
+      "<b>Project Overview</b><br>This website was developed to connect employers and job seekers in the United States. It is built on WordPress and uses WP Job Portal as its main plugin.<br><br><b>My Role & Fixes</b><br>I worked on resolving multiple issues as per the client’s requests—covering everything from the registration process to Stripe payment integration, as well as improving both the jobseeker and employer dashboards. I also performed general site cleanup by removing unused plugins and pages. The primary goal was to ensure the website ran smoothly and efficiently.<br><br><b>Challenges & Solutions</b><br>Although the initial timeline was only a few days, the project extended to over a month. The main challenge was that WP Job Portal had several limitations and bugs that needed to be addressed first. I collaborated directly with the plugin’s customer support team to resolve these issues, which involved waiting for their fixes. Once the core plugin functions were stable, I implemented custom code to meet the client’s specific needs.<br><br>Throughout the process, I maintained clear communication with the client, ensuring we were aligned on progress and timelines. In the end, the website was fully functional, optimized, and met all requirements.",
+    ],
+    [
+      "ZNLRTC",
+      "www.nlrc.ph",
+      znlrtc,
+      "<b>Project Overview</b><br>Zeldan Nordic Languages Review and Training Center is a Finland-focused language training center with trainees from all over the world. They needed a custom system to streamline operations and improve communication between staff and trainees.<br><br><b>My Role</b><br>I took over the project from a previous freelancer and rebuilt major parts of the system. This included redesigning processes for trainee registration, trainee profiles, batch assignments, paper requirements, training milestones, and messaging between trainees and their assigned departments.<br><br>On the employee side, I developed role-based access so each department only sees the relevant parts of the system. I also created features for the marketing team to publish blogs, collect trainee reviews, and generate meta descriptions for social media sharing.<br><br><b>Challenges</b><br>One of the main challenges was working with an unfamiliar PHP framework used by the previous developer. Despite this, I was able to understand and rework the system efficiently.<br><br>Within two months, I successfully launched the website. The employees reported that the new system made their work much easier, improved communication with trainees, and enhanced overall efficiency.<br><br>",
+    ],
+    [
       "Clup Pain Free",
       "www.clubpainfree.com",
       clubpainfree,
@@ -83,12 +96,6 @@ function BodyHome() {
       "www.kineci.com",
       kineci,
       "This website was built using WordPress for the frontend and CodeIgniter 3 for the backend system. I contributed to both sides of the development. The platform allows clinic staff and clients to interact seamlessly, with features such as online communication and record management. Client records are securely stored on the site, making it easier for the clinic to maintain and access important information. The system includes several tools that enhance the online experience for both staff and clients.",
-    ],
-    [
-      "ZNLRTC",
-      "www.nlrc.ph",
-      znlrtc,
-      "This website was initially developed by another freelancer using an unspecified framework. However, I was able to understand and follow the program flow, eventually taking over and working on approximately 95% of the website’s features and functionality. The platform enables recruitment agencies, training center staff, and students to submit and manage all necessary requirements. It also helps staff efficiently monitor and assess each student’s progress through the training program. Overall, the system was designed to streamline and automate the manual processes involved in managing the training flow.",
     ],
   ];
 
@@ -273,9 +280,8 @@ function BodyHome() {
                         className={`clamp-text website-description ${
                           expanded.includes(index) ? "expanded" : ""
                         }`}
-                      >
-                        {description}
-                      </p>
+                        dangerouslySetInnerHTML={{ __html: description }}
+                      />
                       <button
                         className="btn btn-neon show-more-btn"
                         onClick={() => toggleExpand(index)}
